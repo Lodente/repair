@@ -620,3 +620,75 @@ img {
     font-size: 18px;
   }
 }
+
+/** Блок с шагами **/
+.steps__title {
+  margin: auto;
+  margin-bottom: 60px;
+}
+
+.steps__subtitle {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.steps__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.steps__description {
+  display: block;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.steps__block {
+  max-width: 155px;
+  height: 200px;
+  text-align: center;
+}
+
+.steps__image {
+  width: 100px;
+  height: 100px;
+  padding: 30px;
+  margin: auto;
+  margin-bottom: 30px;
+  border: 2px solid #ffd200;
+  border-radius: 50%;
+}
+
+@media (max-width: 768px) {
+  .steps__arrow {
+    display: none;
+  }
+  .steps__title {
+    font-size: 18px;
+  }
+  .steps__subtitle {
+    font-size: 14px;
+  }
+  .steps__description {
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .steps__wrap {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .steps__block {
+    margin-right: 10px;
+    margin-bottom: 20px;
+  }
+}
