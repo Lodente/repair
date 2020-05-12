@@ -34,10 +34,43 @@ a
       line-height: 20px
       margin-right: 23px
     &__item
-     display: flex
-     align-items: flex-start
-     margin-bottom: 40px
-     max-width: 200px
-     font-size: 16px
+      display: flex
+      align-items: flex-start
+      margin-bottom: 40px
+      max-width: 200px
+      font-size: 16px
     &__description
       +bold
+@media (max-width: 1200px)
+  .contacts
+    padding-left: 50px
+@media (max-width: 768px)
+  .contacts
+    flex-basis: 100%
+    &-block
+      justify-content: center
+      max-width: 600px
+    &__title
+      margin: auto
+      max-width: 600px
+      text-align: center
+    &-list
+      &__item
+        max-width: 600px
+  .footer
+    display: flex
+    flex-direction: column
+  .map
+    position: relative
+    width: 100%
+    order: 2
+@media (max-width: 567px)
+  .contacts
+    padding: 0
+    margin-top: 50px
+    &__title
+      margin-bottom: 30px
+      font-size: 18px
+    &-list
+      &__text
+        font-size: 16px
